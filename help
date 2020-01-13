@@ -1,0 +1,38 @@
+client :
+  Create Dockerfile.dev
+  docker build -f Dockerfile.dev .
+  docker run  CONTAINER_ID
+
+server :
+  Create Dockerfile.dev
+  docker build -f Dockerfile.dev .
+  docker run  CONTAINER_ID
+
+worker :
+  Create Dockerfile.dev
+  docker build -f Dockerfile.dev .
+  docker run  CONTAINER_ID
+
+Create docker-compose.yml
+docker-compose up
+
+Create nginx folder
+default.conf
+Dockerfile.dev
+Update docker-compose.yml
+
+docker-compose up --build
+
+docker-compose down
+docker-compose up --build
+
+Create Dockerfile for worker, server, nginx and client
+
+client :
+  nginx << default.conf
+  Dockerfile
+
+git init
+git add .
+git commit -m "initial commit"
+Create new repository in Github
