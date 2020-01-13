@@ -36,3 +36,11 @@ git init
 git add .
 git commit -m "initial commit"
 Create new repository in Github
+git remote add origin https://github.com/anchalgupta1996/multi-docker.git
+git remote -v
+git push origin master
+
+Go to Travis CI and Sync up the repository
+Create .travis.yml
+Go to Travis CI << multi-docker << More options << Settings << Environment Variables 
+  << DOCKER_ID and DOCKER_PASSWORD
